@@ -1,0 +1,31 @@
+doctype html
+
+- var title = "Status & Opdateringer"
+
+html(lang="da")
+	head
+		title Corona Guide - #{title}
+		include includes/meta.pug
+		
+	body
+		header
+			include includes/header.pug
+
+		main
+			section
+				.title-container
+					img.coronavirus(src="images/virus.png" alt="virus logo")
+					h1 #{title}
+					img.coronavirus(src="images/virus.png" alt="virus logo")
+				.divider
+								
+				div(class="flourish-embed flourish-bar-chart-race" data-src="visualisation/1754007" data-url="https://flo.uri.sh/visualisation/1754007/embed")
+					script(src="https://public.flourish.studio/resources/embed.js")
+				
+				
+
+		include includes/footer.pug
+					
+
+		script(src="javascript/main.js")
+		script(src="javascript/quiz.js")

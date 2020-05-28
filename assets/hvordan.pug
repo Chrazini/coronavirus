@@ -1,0 +1,140 @@
+doctype html
+
+- var title = "Hvordan smitter Coronavirus?"
+
+html(lang="da")
+	head
+		title Corona Guide - #{title}
+		include includes/meta.pug
+		
+	body
+		header
+			include includes/header.pug
+
+		main
+			section
+				.title-container
+					img.coronavirus(src="images/virus.png" alt="virus logo")
+					h1 #{title}
+					img.coronavirus(src="images/virus.png" alt="virus logo")
+				.divider
+
+				p Coronavirus spreder gennem dråbe- og kontaktsmitte. Dråber spredes når man enten nyser eller hoster og når omkring to meter, hvorefter de relativt hurtigt falder til jorden. Dette betyder at coronavirus ikke er en luftbåren virus. Virussen kan dog sætte sig på overflader hvor de, alt efter overfladetypen, kan overleve i en længere periode.
+				p Coronavirus er ikke i stand til at smitte gennem huden, dette betyder at du ikke er i fare for at blive smittet selv om du har direkte kontakt med virussen. Slimhinder i blandt andet mund, næse og øjne er til gengæld meget ømfindtlige og kan nemt penetreres af coronavirus. Det er derfor særdeles vigtigt at være ekstra opmærksom på at mindske berøring af ansigtet. Af samme årsag er det også vigtigt at undgå tæt kontakt med andre mennesker da de kan være smittebærere - samtlige små spytpartikler kan nemt blive udvekslet i en almindelig samtale, hvilket hurtigt kan sprede coronavirus.
+
+				h4 Hvor længe overlever Coronavirus?
+				p Som udgangspunkt har coronavirus brug for en vært for at overleve – altså et levende menneske eller dyr. Det er dog forskelligt hvor hurtigt virussen dør når den er uden for kroppen - det er derfor vigtigt at være opmærksom på hvilke overflader og miljøer coronavirus trives bedst ved. På metal, glas or keramik kan coronavirus overleve i op til fem døgn og på mange typer af træ overlever coronavirus i op til fire døgn. Plastik giver en overlevelsestid på tre døgn og på pap et enkelt døgn. Til sidst men ikke mindst har vi kobber som giver coronavirus en overlevelsestid på omkring fire timer.
+
+				.auto-grid.example-grid
+					.example-container
+						p.surface Metal
+						.examples
+							ul
+								li Dørhåndtag
+								li Smykker
+								li Bestik
+						p.time-alive 120 timer
+					.example-container
+						p.surface Træ
+						.examples
+							ul
+								li Møbler
+								li Gulv
+								li Hylder
+						p.time-alive 96 timer
+					.example-container
+						p.surface Plastik
+						.examples
+							ul
+								li Elevatorknapper
+								li Flasker
+								li Tastatur & Mus
+						p.time-alive 72 timer
+					.example-container
+						p.surface Rustfrit Stål
+						.examples
+							ul
+								li Køleskabe
+								li Gryder & Pander
+								li Vask
+						p.time-alive 72 timer
+					.example-container
+						p.surface Pap
+						.examples
+							ul
+								li Pakker
+								li Pizzabakker
+								li Poser
+						p.time-alive 24 timer
+					.example-container
+						p.surface Kobber
+						.examples
+							ul
+								li Mønter
+								li Køkkengrej
+								li Håndtag
+						p.time-alive 4 timer
+					.example-container
+						p.surface Aluminium
+						.examples
+							ul
+								li Dåser
+								li Sølvpapir
+								li Vandflasker
+						p.time-alive 8 timer
+					.example-container
+						p.surface Glas
+						.examples
+							ul
+								li Vinduer
+								li Spejle
+								li Drikkeglas
+						p.time-alive 120 timer
+					.example-container
+						p.surface Keramik
+						.examples
+							ul
+								li Tallerkener
+								li Vaser
+								li Kopper
+						p.time-alive 120 timer
+					.example-container
+						p.surface Papir
+						.examples
+							ul
+								li Post
+								li Aviser
+								li Køkkenrulle
+						p.time-alive 120 timer
+				
+				h4 Undgå at blive smittet
+				h6 Vask Hænder
+				p Vask hænder ofte med både vand og sæbe i mindst 20 sekunder – specielt hvis du lige kommer fra et offentligt rum. Det er også vigtigt at vaske hænder efter at nyse, hoste eller at have pustet næse. Hvis vand og sæbe ikke er tilgængeligt, så brug i stedet for håndsprit med minimum 60% alkohol. Sikre dig at håndspritten bliver smurt godt ud på begge hænder en gnid dem sammen indtil begge hænder er tørre.
+
+				h6 Undgå tæt Kontakt
+				p Undgå tæt kontakt med andre der kan være, eller er, smittet med coronavirus- dette gæler både ude, inde og i eget	 hjem. Hold omkring en til to meters afstand fra alle mennesker når du er i et offentligt rum. Undgå at holde til ved store mængder af mennesker og vær særligt opmærksom på ældre eller syge mennesker der har en højere risiko for at blive alvorligt ramt.
+
+				h6 Host
+				p Hvis du skal nyse eller hoste er det vigtigt at dette gøres i enten papir eller ind i din albue. Hvis du har hostet eller nyst ned i papir skal det smides ud med det samme. Efter at have nyst eller hostet anbefales det er vaske hænder eller bruge håndsprit med det samme.
+
+				h6 Opmærksom
+				p Bring opmærksomhed til dit helbred - vær på udkig efter feber, hosten og vejrtrækningsproblemer. Dette er særligt vigtigt hvis du finder dig i en position hvor du er nødsaget til at være blandt mennesker. Tag din temperatur hvis du begynder at mærke symptomer, vær dog opmærksom på at sport, træning og nogen medicinering kan påvirke din temperatur.
+
+				h6 Rengøring
+				p Rengøring er essentielt for at mindske smitterisikoen. Det anbefales at gøre rent så ofte som muligt – særligt store overflader som en hyppigt anvendt skal vaskes grundigt med vand og sæbe og til sidst desinfektionsmiddel. Steder der er særligt udsatte og derfor bør rengøres oftere er bland andet borde, håndtag, lyskontakter, køkkenborde, telefoner, toiletter og vaske.
+				p Gør gerne brug af engangshandsker for at skåne hænder og undgå smitte.
+
+				.quiz-container
+					.questions
+						h4#question-count Ved du nok on COVID-19?
+						span#question Tjek din viden om coronavirusen ved at tage vores hurtige quiz med generelle spørgsmål omkring virussens egenskaber, smittefare og sundhedsstyrelsens anbefalinger.
+						#answers
+					.controls
+						button#start Start Quiz
+						button#next Næste
+
+		include includes/footer.pug
+					
+
+		script(src="javascript/main.js")
+		script(src="javascript/quiz.js")

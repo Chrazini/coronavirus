@@ -1,0 +1,55 @@
+doctype html
+
+- var title = "Hvad er Coronavirus?"
+
+html(lang="da")
+	head
+		title Corona Guide - #{title}
+		include includes/meta.pug
+		
+	body
+		header
+			include includes/header.pug
+
+		main
+			section
+				.title-container
+					img.coronavirus(src="images/virus.png" alt="virus logo")
+					h1 #{title}
+					img.coronavirus(src="images/virus.png" alt="virus logo")
+				.divider
+								
+				p Coronavirus er en fælles betegnelse for en type virus der kan forårsage luftvejsinfektioner hos mennesker og en lang række andre sygdomme hos dyr. Selvom der findes mere end 30 forskellige typer af coronavirus i verden er der kun syv ud af disse der kan forårsage sygdom hos mennesker. Coronavirus menes at være skyld i majoriteten af forkølelser hos voksne.
+				p Den aktuelle type coronavirus, som påvirker størstedelen af kloden på nuværende tidspunkt, bliver i daglig tale omtalt som ”ny coronavirus” eller ”COVID-19”. De officielle termer defineret af World Health Organization (WHO) differentiere dog imellem sygdommen og selve virussen. Sygdommen forårsaget af virussen hedder officielt ”coronavirus disease” og forkortes ”COVID-19”. Selve virussen er officielt navngivet ”severe acute respiratory syndrome coronavirus 2” og forkortes ”SARS-CoV-2”.
+				
+				.auto-grid
+					.naming
+						p.definition Sygdom
+						p.explanation Coronavirus Disease
+						p.abbreviation COVID-19
+					.naming
+						p.definition Virus
+						p.explanation Severe Acute Respiratory Syndrome Coronavirus 2
+						p.abbreviation SARS-CoV-2
+
+				h4 Symptomer
+				p COVID-19 påvirker folk på forskellige måder. Langt størstedelen af smittede vil opleve milde til moderate symptomer hvorefter de langsomt vil komme sig uden nødvendig hospitalisering. De mest normale symptomer er feber, tør hoste og træthed. Det kan også forekomme at du som smittet vil opleve symptomer såsom ømhed i muskler og led, ondt i halsen, diarré, hovedpine, tab af smag eller lugt og udslæt på huden. Alvorlige symptomer er blandt andet åndedrætsbesvær, brystsmerter- og tryg eller tæt på komplet tale eller bevægelse.
+
+				iframe(class="video" width="560" height="315" src="https://www.youtube.com/embed/janDakNafOA" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+				
+				//details.facts
+					summary Fakta
+					ul
+						li Et nyopdaget coronavirus er beskrevet i Asien og omtales som Ny Coronavirus eller "COVID-19".
+						li Symptomerne er som ved influenza med feber, ondt i halsen, ondt i muskler samt hoste.
+						li Infektionen går ofte over af sig selv igen, men i nogle tilfælde udvikles en livstruende virus-lungebetændelse.
+						li Smitten udskilles i luftvejene, og personer med infektion udskiller virus, når de hoster og nyser.
+						li Der er aktuelt ingen medicinsk behandling eller vaccine mod Ny Coronavirus.
+						li Ved symptomer kontakt egen læge eller lægevagt per telefon
+						li På grund af smitterisiko skal du ikke møde op i lægepraksis, hos vagtlægen, på skadestuer eller i akutmodtagelser.
+
+		include includes/footer.pug
+					
+
+		script(src="javascript/main.js")
+		script(src="javascript/quiz.js")

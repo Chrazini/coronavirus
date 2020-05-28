@@ -1,0 +1,58 @@
+doctype html
+
+- var title = "Forholdsregler"
+
+html(lang="da")
+	head
+		title Corona Guide - #{title}
+		include includes/meta.pug
+		
+	body
+		header
+			include includes/header.pug
+
+		main
+			section
+				.title-container
+					img.coronavirus(src="images/virus.png" alt="virus logo")
+					h1 #{title}
+					img.coronavirus(src="images/virus.png" alt="virus logo")
+				.divider
+				
+	
+				p Det kan være svært at overskue de uendelig lange artikler og anbefalinger fra sundhedsstyrelsen, politiet og mange andre steder fra. Coronavirussen spreder gennem dråbe- og kontaktsmitte – dette betyder at vi kan mindste smitten betydeligt så længe vi alle er forsigtige og følger disse forholdsregler.
+				.expanded
+				.autogrid.precautions
+					#wash-hands.container.clicker
+						img(src="images/forholdsregler/hand-washing.svg" alt="washing hands")
+						p Vask hænder ofte og brug håndsprit hyppigt.
+						p.extended Vask hænder ofte med både vand og sæbe i mindst 20 sekunder – specielt hvis du lige kommer fra et offentligt rum. Det er også vigtigt at vaske hænder efter at nyse, hoste eller at have pustet næse. Hvis vand og sæbe ikke er tilgængeligt, så brug i stedet for håndsprit med minimum 60% alkohol. Sikre dig at håndspritten bliver smurt godt ud på begge hænder en gnid dem sammen indtil begge hænder er tørre.
+					.container.clicker
+						img(src="images/forholdsregler/sneeze.svg" alt="sneezing")
+						p Host eller nys i dit ærme – ikke dine hænder
+					.container.clicker
+						img(src="images/forholdsregler/coronavirus.svg" alt="handshake")
+						p Begræns fysisk kontakt – undgå håndtryk, kys og kram.
+					.container.clicker
+						img(src="images/forholdsregler/distance.svg" alt="keep distance")
+						p Hold en til to meters afstand fra folk i det offentlige rum.
+					.container.clicker
+						img(src="images/forholdsregler/virus.svg" alt="stay indoor")
+						p Bliv så vidt muligt indendørs.
+					.container.clicker
+						img(src="images/forholdsregler/calendar.svg" alt="use time wisely")
+						p Begræns den tid du bruger i butikker, når du handler ind.
+					.container.clicker
+						img(src="images/forholdsregler/gloves.svg" alt="cleaning")
+						p Vær ekstra opmærksom når det kommer til rengøring.
+					.container.clicker
+						img(src="images/forholdsregler/touch.svg" alt="face")
+						p Undgå berøring af ansigtet.
+					
+		include includes/footer.pug
+						
+
+					
+
+		script(src="javascript/main.js")
+		script(src="javascript/quiz.js")
